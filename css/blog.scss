@@ -1,0 +1,73 @@
+html{
+    overflow: auto;
+}
+body {
+    font-family: 'futura-pt', sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    header {
+        width: 90vw;
+        height: 8vw;
+        margin: 2vw auto;
+
+        ul {
+            padding: 0 2vw;
+            list-style: none;
+            display: flex;
+            overflow-x: scroll;
+            /*スクロールバー非表示（IE・Edge）*/
+            -ms-overflow-style: none;
+            /*スクロールバー非表示（Firefox）*/
+            scrollbar-width: none;
+
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
+            li {
+                height: 8vw;
+                line-height: 8vw;
+                text-align: center;
+                margin: 0 2vw;
+                font-size: 1.5vw;
+            }
+        }
+    }
+
+    .title {
+        h1 {
+            text-align: center;
+            font-size: 3.5vw;
+        }
+    }
+}
+
+.grid {
+    margin-top: 5vw;
+    position: relative;
+    .item {
+        display: block;
+        position: absolute;
+        margin: 2vw;
+        width: 28vw;
+        height: 28vw;
+        border-radius: 1vw;
+        box-shadow: 1vw 1vw rgba(0, 0, 0, 0.5);
+        background-color: rgb(225, 225, 225);
+        img {
+            width: 28vw;
+            height: 28vw;
+            object-fit: cover;
+            border-radius: 1vw;
+        }
+        p {
+            text-align: center;
+            color: rgb(26, 26, 26);
+        }
+        .date {
+            font-size: 2.5vw;
+            margin-top: 0.5vw;
+        }
+    }
+    
+}

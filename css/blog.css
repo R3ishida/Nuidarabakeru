@@ -1,0 +1,69 @@
+@charset "UTF-8";
+html {
+  overflow: auto;
+}
+
+body {
+  font-family: "futura-pt", sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+}
+body header {
+  width: 90vw;
+  height: 8vw;
+  margin: 2vw auto;
+}
+body header ul {
+  padding: 0 2vw;
+  list-style: none;
+  display: flex;
+  overflow-x: scroll;
+  /*スクロールバー非表示（IE・Edge）*/
+  -ms-overflow-style: none;
+  /*スクロールバー非表示（Firefox）*/
+  scrollbar-width: none;
+}
+body header ul ::-webkit-scrollbar {
+  display: none;
+}
+body header ul li {
+  height: 8vw;
+  line-height: 8vw;
+  text-align: center;
+  margin: 0 2vw;
+  font-size: 1.5vw;
+}
+body .title h1 {
+  text-align: center;
+  font-size: 3.5vw;
+}
+
+.grid {
+  margin-top: 5vw;
+  position: relative;
+}
+.grid .item {
+  display: block;
+  position: absolute;
+  margin: 2vw;
+  width: 28vw;
+  height: 28vw;
+  border-radius: 1vw;
+  box-shadow: 1vw 1vw rgba(0, 0, 0, 0.5);
+  background-color: rgb(225, 225, 225);
+}
+.grid .item img {
+  width: 28vw;
+  height: 28vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1vw;
+}
+.grid .item p {
+  text-align: center;
+  color: rgb(26, 26, 26);
+}
+.grid .item .date {
+  font-size: 2.5vw;
+  margin-top: 0.5vw;
+}/*# sourceMappingURL=blog.css.map */
